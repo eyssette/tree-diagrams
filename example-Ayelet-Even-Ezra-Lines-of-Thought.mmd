@@ -1,0 +1,69 @@
+%%{init{"theme":"base","themeCSS":"* {line-height:1.25em!important; font-size:12px; text-align:left!important;} g[id*=\"A\"] * {font-size:1.01em;}  g[id*=\"V\"] * {color:transparent} .edge-thickness-normal{stroke-width:1px; stroke:#999;} .edge-thickness-thick{stroke-width:1px!important} .edge-pattern-dotted{stroke:transparent}","themeVariables":{"secondaryColor":"transparent","primaryColor":"transparent","primaryBorderColor":"transparent"},"flowchart":{"htmlLabels":true,"padding":5,"rankSpacing":1,"nodeSpacing":1,"curve":"linear"}} }%%
+flowchart LR
+A["<i>Lines of though</i> studies <br>the medieval habit of<br>drawing horizontal tree<br>diagrams"]
+B1["first in general,<br>addressing its"]
+B2["then in its specific<br>applications,<br>explicating"]
+
+C1["1 form"]
+C2["2 situation: when,<br> where, who <br>and how much"]
+C3["3 distinctions"]
+C4["4 structures<br>of language"]
+C5["5 structures <br>of texts"]
+
+D1["definition"]
+D2["evolution"]
+D3["linguistic aspects"]
+D4["cognitive aspects"]
+
+D5[in philosophy]
+D6[biblical theology]
+D7[law]
+D8[and medicine]
+
+D9[in poetry]
+D10[epistolography]
+D11[& grammar]
+
+D12[composition]
+D13[analysis]
+
+E1[theological<br> questions]
+E2[argument]
+E3[narrative]
+
+F1[philosophical]
+F2[theological]
+F3[biblical]
+
+G1[like Aristotle's <br><i>Organon</i>]
+G2[like Peter Lombard's <br><i>Sentences</i>]
+G3[like <i>the book<br> of Job</i>]
+
+A === B1
+A === B2
+
+B1 --- C1
+B1 --- C2
+ 
+B2 --- C3 & C4 & C5
+
+C1 --- D1 & D2 & D3 & D4
+C3 --- D5 & D6 & D7 & D8
+
+C4 --- D9 & D10 & D11
+
+C5 --- D12 & D13
+
+D12 --- E1
+D13 --- E2 & E3
+
+E2 --- F1 & F2
+E3 --- F3
+
+F1 --- G1
+F2 --- G2
+F3 --- G3
+
+C2 -.- V1 & V2
+D11 -.- V4
+D12 -.- V3
