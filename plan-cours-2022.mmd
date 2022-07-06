@@ -1,0 +1,38 @@
+%%{init{"theme":"base","themeCSS":"* {line-height:1.25em!important; font-size:12px; text-align:left!important;} span span{color:#666; font-size:0.9em;}  g[id*=\"A\"] * {font-size:1.01em;}  g[id*=\"V\"] * {color:transparent} .edge-thickness-normal{stroke-width:1px; stroke:#999;} .edge-thickness-thick{stroke-width:1px!important} .edge-pattern-dotted{stroke:transparent} mark {background-color:grey; color:white; display:block; text-align:center!important; padding:5px 10px; border-radius:15px}","themeVariables":{"secondaryColor":"transparent","primaryColor":"transparent","primaryBorderColor":"transparent"},"flowchart":{"htmlLabels":true,"padding":5,"rankSpacing":1,"nodeSpacing":1,"curve":"linear"}} }%%
+flowchart LR
+
+A[<mark>Plan <br>du cours</mark>]
+
+B1[<b>Séquence 1 :</b></b><br> Éthique et <br> philosophie<br>  morale]
+B2[<b>Séquence 2 :</b><br> Philosophie <br> de l'esprit]
+B3[<b>Séquence 3 :</b><br> Philosophie<br> de la culture]
+B4[<b>Séquence 4 :</b><br> Philosophie<br>sociale et <br>politique]
+B5[<b>Séquence 5 :</b><br>Épistémologie <br>et métaphysique]
+
+C1["<i>Chapitre 1 :</i> Le bonheur<br><span>(Le bonheur, le temps)</span>"]
+C2["<i>Chapitre 2 :</i> La morale<br><span>(La morale, le devoir,<br>la nature)</span>"]
+
+C3["<i>Chapitre 3 :</i> Le libre arbitre<br><span>(La liberté, l'inconscient)</span>"]
+C4["<i>Chapitre 4 :</i> L'identité personnelle<br><span>(L'existence humaine, la  conscience)</span>"]
+
+C5["<i>Chapitre 5 :</i> L'art<br><span>(L'art, la culture)</span>"]
+C6["<i>Chapitre 6 :</i> La technique<br><span>(La technique, la<br>culture, le travail,<br>la nature, la liberté)</span>"]
+C7["<i>Chapitre 7 :</i> Le langage<br><span>(Le langage, la culture)</span>"]
+
+C8["<i>Chapitre 8 :</i> Œuvre suivie <br><cite>(Rousseau, <i>Discours sur <br>l'économie politique</i>)</cite><br><span>(La politique, la liberté,<br> l'#Eacute;tat, la justice)</span>"]
+C9["<i>Chapitre 9 :</i> La politique<br><span>(La politique, la liberté,<br> l'#Eacute;tat, la justice)</span>"]
+
+C10["<i>Chapitre 10 :</i> La vérité<br><span>(La vérité, la connaissance, <br>la raison, la science)</span>"]
+C11["<i>Chapitre 11 :</i> La religion<br><span>(La religion, la vérité, la raison)</span>"]
+
+A --- B1 & B2 & B3 & B4 & B5
+
+B1 --- C1 & C2
+B1 -.- V1
+B2 --- C3 & C4
+B2 -.- V2
+B3 --- C5 & C6 & C7
+B3 -.- V3
+B4 --- C8 & C9
+B4 -.- V4
+B5 --- C10 & C11
